@@ -56,6 +56,9 @@ body {
     font-family: all-round-gothic-bold !important;
     color: black !important;
 }
+.allround-normal {
+  font-family: all-round-gothic-book !important;
+}
 .subheading {
     font-family: all-round-gothic-book !important;
     color: black !important;
@@ -79,8 +82,8 @@ body {
     background: linear-gradient(231.18deg, #FF3F23 15.85%, #FFCA54 25.87%, #FF953C 36.96%, #FE652D 48.77%, #FA589D 58.43%, #9D36FC 68.45%, #2FD8D8 79.9%),
   linear-gradient(0deg, #FFFFFF, #FFFFFF);
   background-size: 200%;
-  -webkit-animation: anime 16s linear infinite;
-          animation: anime 16s linear infinite;
+  -webkit-animation: anime 8s linear infinite;
+          animation: anime 8s linear infinite;
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -506,7 +509,7 @@ custom-carousel {
   width: 175px;
   height: 58px;
   text-align: center;
-  color: rgba(255,255,255,0.9);
+  /* color: rgba(255,255,255,0.9); */
   border-radius: 50px;
   background: linear-gradient(231.18deg, #FF3F23 15.85%, #FFCA54 25.87%, #FF953C 36.96%, #FE652D 48.77%, #FA589D 58.43%, #9D36FC 68.45%, #2FD8D8 79.9%),
   linear-gradient(0deg, #FFFFFF, #FFFFFF);
@@ -593,3 +596,14 @@ custom-carousel {
     }
   }
 /* Animation Css end  */
+
+
+
+
+.foter-bg{
+  background-color: rgba(255, 255, 255, 0.171);
+  backdrop-filter: blur(15px);
+}
+.nav-bg{
+  background-color: rgba(255, 255, 255, 0.932);
+}
