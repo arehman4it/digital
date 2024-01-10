@@ -607,3 +607,7 @@ custom-carousel {
 .nav-bg{
   background-color: rgba(255, 255, 255, 0.932);
 }
+.flip-img{
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
