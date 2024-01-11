@@ -36,7 +36,7 @@
 /* Website CSS start */
 body {
     color: black;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 .popins{
   font-family: 'Poppins', sans-serif;
@@ -650,4 +650,12 @@ custom-carousel {
 }
 .shadow-main{
   box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+}
+.swiper{
+  padding: 50px !important;
+}
+@media only screen and (max-width: 760px) {
+  .swiper{
+    padding: 10px !important;
+  }
 }
