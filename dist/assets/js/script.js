@@ -75,25 +75,38 @@ const animator = new TextAnimator('.text-animation', {
 animator.animate();
 // Text animation end
 // Nav bar start
-// Gets the Mobile Nav icon by its ID
-let bars = document.getElementById('bars');
-// Gets the Mobile Nav container
-let mobileMenu = document.getElementById('mobileMenu');
-// Displays the Mobile Nav when clicked and changes the Nav Icon from three bars to an 'X'
-bars.addEventListener('click', function(){
-  mobileMenu.classList.toggle('show');
-  bars.classList.toggle('fa-times');
-});
+// // Gets the Mobile Nav icon by its ID
+// let bars = document.getElementById('bars');
+// // Gets the Mobile Nav container
+// let mobileMenu = document.getElementById('mobileMenu');
+// // Displays the Mobile Nav when clicked and changes the Nav Icon from three bars to an 'X'
+// bars.addEventListener('click', function(){
+//   mobileMenu.classList.toggle('show');
+//   bars.classList.toggle('fa-times');
+// });
 
+
+// document.addEventListener('DOMContentLoaded', function() {
+//   const mobileIcon = document.getElementById('mobileIcon');
+//   const mobileMenu = document.getElementById('mobileMenu');
+//   mobileIcon.addEventListener('click', function() {
+//     mobileMenu.classList.toggle('hidden');
+//   });
+//   mobileMenu.addEventListener('click', function() {
+//     mobileMenu.classList.add('hidden');
+//   });
+// });
+// navbar end
 
 document.addEventListener('DOMContentLoaded', function() {
-  const mobileIcon = document.getElementById('mobileIcon');
+  const bars = document.getElementById('bars');
   const mobileMenu = document.getElementById('mobileMenu');
-  mobileIcon.addEventListener('click', function() {
+
+  bars.addEventListener('click', function() {
     mobileMenu.classList.toggle('hidden');
   });
+
   mobileMenu.addEventListener('click', function() {
     mobileMenu.classList.add('hidden');
   });
 });
-// navbar end

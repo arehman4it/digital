@@ -36,7 +36,7 @@
 /* Website CSS start */
 body {
     color: black;
-  
+  overflow-x: hidden;
 }
 .popins{
   font-family: 'Poppins', sans-serif;
@@ -596,17 +596,54 @@ custom-carousel {
     }
   }
 /* Animation Css end  */
+/* Gradient border start */
 
 
 
+.gradient-border:hover {
+  --borderWidth: 1px;
+  background: transparent;
+  position: relative;
+  border-radius: 80px; /* Set to 50% for a perfect circle */
+}
 
+.gradient-border:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(231.18deg, #FF3F23 15.85%, #FFCA54 25.87%, #FF953C 36.96%, #FE652D 48.77%, #FA589D 58.43%, #9D36FC 68.45%, #2FD8D8 79.9%),
+  linear-gradient(0deg, #FFFFFF, #FFFFFF);
+  border-radius: 80px; /* Set to 50% for a perfect circle */
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* Gradient border end */
+
+
+/* 
 .foter-bg{
   background-color: rgba(255, 255, 255, 0.171);
   backdrop-filter: blur(15px);
 }
 .nav-bg{
   background-color: rgba(255, 255, 255, 0.932);
-}
+} */
 .flip-img{
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);

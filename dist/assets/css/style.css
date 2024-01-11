@@ -554,12 +554,16 @@ video {
   position: relative;
 }
 
-.bottom-0{
-  bottom: 0px;
+.-right-40{
+  right: -10rem;
 }
 
-.right-5{
-  right: 1.25rem;
+.-top-52{
+  top: -13rem;
+}
+
+.bottom-0{
+  bottom: 0px;
 }
 
 .right-8{
@@ -568,6 +572,14 @@ video {
 
 .top-4{
   top: 1rem;
+}
+
+.-right-52{
+  right: -13rem;
+}
+
+.-z-10{
+  z-index: -10;
 }
 
 .col-span-12{
@@ -625,10 +637,6 @@ video {
   margin-inline-start: 1.25rem;
 }
 
-.mt-0{
-  margin-top: 0px;
-}
-
 .mt-1{
   margin-top: 0.25rem;
 }
@@ -637,16 +645,16 @@ video {
   margin-top: 3.5rem;
 }
 
-.mt-20{
-  margin-top: 5rem;
-}
-
 .mt-3{
   margin-top: 0.75rem;
 }
 
 .mt-5{
   margin-top: 1.25rem;
+}
+
+.mt-8{
+  margin-top: 2rem;
 }
 
 .mt-96{
@@ -689,8 +697,8 @@ video {
   height: 3.5rem;
 }
 
-.h-\[750px\]{
-  height: 750px;
+.h-\[700px\]{
+  height: 700px;
 }
 
 .w-14{
@@ -781,6 +789,10 @@ video {
 
 .gap-20{
   gap: 5rem;
+}
+
+.gap-5{
+  gap: 1.25rem;
 }
 
 .gap-6{
@@ -881,10 +893,6 @@ video {
   padding: 0.125rem;
 }
 
-.p-10{
-  padding: 2.5rem;
-}
-
 .p-\[10\%\]{
   padding: 10%;
 }
@@ -912,6 +920,11 @@ video {
   padding-right: 1.25rem;
 }
 
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .px-\[30px\]{
   padding-left: 30px;
   padding-right: 30px;
@@ -925,6 +938,11 @@ video {
 .px-\[70px\]{
   padding-left: 70px;
   padding-right: 70px;
+}
+
+.py-12{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .py-2{
@@ -950,16 +968,6 @@ video {
 .py-\[2\%\]{
   padding-top: 2%;
   padding-bottom: 2%;
-}
-
-.px-10{
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
-.px-12{
-  padding-left: 3rem;
-  padding-right: 3rem;
 }
 
 .pb-1{
@@ -1010,12 +1018,12 @@ video {
   padding-top: 2%;
 }
 
-.text-center{
-  text-align: center;
+.text-left{
+  text-align: left;
 }
 
-.text-right{
-  text-align: right;
+.text-center{
+  text-align: center;
 }
 
 .text-2xl{
@@ -1074,6 +1082,19 @@ video {
   line-height: 1rem;
 }
 
+.text-\[36px\]{
+  font-size: 36px;
+}
+
+.text-\[128px\]{
+  font-size: 128px;
+}
+
+.text-9xl{
+  font-size: 8rem;
+  line-height: 1;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -1122,6 +1143,10 @@ video {
   line-height: 111px;
 }
 
+.leading-\[45px\]{
+  line-height: 45px;
+}
+
 .leading-normal{
   line-height: 1.5;
 }
@@ -1138,11 +1163,6 @@ video {
 .text-\[\#030303\]{
   --tw-text-opacity: 1;
   color: rgb(3 3 3 / var(--tw-text-opacity));
-}
-
-.text-\[\#222222\]{
-  --tw-text-opacity: 1;
-  color: rgb(34 34 34 / var(--tw-text-opacity));
 }
 
 .text-\[\#888\]{
@@ -1241,6 +1261,7 @@ video {
 
 body {
   color: black;
+  overflow-x: hidden;
 }
 
 .popins{
@@ -1768,15 +1789,56 @@ custom-carousel {
 
 /* Animation Css end  */
 
-.foter-bg{
-  background-color: rgba(255, 255, 255, 0.171);
-  -webkit-backdrop-filter: blur(15px);
-          backdrop-filter: blur(15px);
+/* Gradient border start */
+
+.gradient-border:hover {
+  --borderWidth: 1px;
+  background: transparent;
+  position: relative;
+  border-radius: 80px;
+  /* Set to 50% for a perfect circle */
 }
 
+.gradient-border:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(231.18deg, #FF3F23 15.85%, #FFCA54 25.87%, #FF953C 36.96%, #FE652D 48.77%, #FA589D 58.43%, #9D36FC 68.45%, #2FD8D8 79.9%),
+  linear-gradient(0deg, #FFFFFF, #FFFFFF);
+  border-radius: 80px;
+  /* Set to 50% for a perfect circle */
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Gradient border end */
+
+/* 
+.foter-bg{
+  background-color: rgba(255, 255, 255, 0.171);
+  backdrop-filter: blur(15px);
+}
 .nav-bg{
   background-color: rgba(255, 255, 255, 0.932);
-}
+} */
 
 .flip-img{
   transform: scaleX(-1);
@@ -1915,14 +1977,6 @@ custom-carousel {
     margin-top: 0px;
   }
 
-  .md\:mt-72{
-    margin-top: 18rem;
-  }
-
-  .md\:mt-96{
-    margin-top: 24rem;
-  }
-
   .md\:mt-\[-35px\]{
     margin-top: -35px;
   }
@@ -1957,6 +2011,10 @@ custom-carousel {
 
   .md\:pt-20{
     padding-top: 5rem;
+  }
+
+  .md\:pt-28{
+    padding-top: 7rem;
   }
 
   .md\:text-left{
@@ -2073,6 +2131,10 @@ custom-carousel {
 
   .\32xl\:text-\[20px\]{
     font-size: 20px;
+  }
+
+  .\32xl\:text-\[128px\]{
+    font-size: 128px;
   }
 }
 
