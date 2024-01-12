@@ -141,39 +141,42 @@
           </div>
         </div>
         <!-- MOBILE NAV ICON -->
-        <div class="lg:hidden absolute top-4 right-8 z-50">
+        <div class="hidden absolute top-4 right-8 z-50">
           <button aria-label="navigation"  id="mobileIcon" type="button" class="text-black transition duration-300 focus:outline-none focus:text-black hover:text-black" >
             <i class="fas fa-bars text-3xl" id="bars"></i>
           </button>
         </div>
         <!-- Your existing HTML for mobile nav -->
-        <div id="mobileMenu" class="hidden lg:hidden flex flex-col w-full  mx-auto py-8 text-center">
+        <div id="mobileMenu" class=" flex flex-col w-full  mx-auto py-8 text-center">
           <!-- <a href="#" class="block cursor-pointer py-3 transition duration-300 focus:outline-none focus:text-yellow-500 focus:underline hover:underline hover:text-yellow-500 poppins text-black uppercase font-medium" style="text-underline-offset: 8px;">Home</a> -->
-          <a
-            href="hero"
+          <div class="flex items-center gap-3 justify-center">
+            <a
+            href="#hero"
             class="block cursor-pointer py-3 transition duration-300 focus:outline-none focus:text-yellow-500 focus:underline hover:underline hover:text-yellow-500 poppins text-black uppercase font-medium"
             style="text-underline-offset: 8px"
             >Home</a
           >
           <a
-            href="about"
+            href="#about"
             class="block text-white= cursor-pointer mt-1 py-3 transition duration-300 focus:outline-none focus:text-yellow-500 focus:underline hover:underline hover:text-yellow-500 poppins text-black uppercase font-medium"
             style="text-underline-offset: 8px"
             >About Us</a
           >
           <a
-            href="services"
+            href="#services"
             class="block text-white= cursor-pointer mt-1 py-3 transition duration-300 focus:outline-none focus:text-yellow-500 focus:underline hover:underline hover:text-yellow-500 poppins text-black uppercase font-medium"
             style="text-underline-offset: 8px"
             >Services</a
           >
           <a
-            href="portfolio"
+            href="#portfolio"
             class="block text-white= cursor-pointer mt-1 py-3 transition duration-300 focus:outline-none focus:text-yellow-500 focus:underline hover:underline hover:text-yellow-500 poppins text-black uppercase font-medium"
             style="text-underline-offset: 8px"
             >Portfolio</a
           >
-          <div class="flex lg:hidden justify-center gap-5 mb-5 items-center">
+          </div>
+        
+          <div class="flex lg:hidden justify-center mt-5 gap-5 mb-5 items-center">
             <a href=""><img src="./assets/img/linkedin.png" alt="" /></a>
             <a href="https://www.instagram.com/digitalshaping/" target="_blank"
               ><img src="./assets/img/insta.png" alt=""
@@ -189,7 +192,8 @@
               ><img src="./assets/img/tiktok.png" alt=""
             /></a>
           </div>
-          <a
+          <div>
+            <a
             href="https://calendly.com/digital-shaping/discovery-call"
             target="_blank"
           >
@@ -208,31 +212,33 @@
               Contact us
             </button>
           </a>
+          </div>
+         
         </div>
       </nav>
       <!-- navbar end here -->
 
       <!--Hero Section Start  -->
-      <section class="canvas-position pt-20" id="hero">
+      <section class="canvas-position md:pt-20" id="hero">
         <div
-          class="absolute -z-10  hidden lg:flex justify-end content-end w-full"
+          class="absolute hidden -z-10  md:flex justify-end content-end w-full"
         >
           <img src="./assets/img/video.gif" class="opacity-45" alt="" />
-          <!-- <video width="350" height="240" autoplay loop>
-            <source src="./assets/img/video.mp4" type="video/mp4"> -->
-          <!-- <source src="movie.ogg" type="video/ogg"> -->
-          <!-- Your browser does not support the video tag.
-          </video> -->
         </div>
         <!-- <div class="absolute flex justify-start content-start w-full">
           <img src="./assets/img/video.gif" class="ms-5 flip-img opacity-45" alt="">
         </div> -->
         <div class="p-[5%] mt-5">
           <h1
-            class="font-bold hero-glow text-[#030303] text-5xl md:text-9xl leading-snug text-center"
+            class="font-bold hero-glow text-[#030303] text-5xl md:text-9xl hero-line text-center"
           >
             Digital Shaping
           </h1>
+          <div
+          class="block md:hidden justify-end content-end w-full"
+        >
+          <img src="./assets/img/video.gif" class="opacity-45" alt="" />
+        </div>
           <div
             data-aos="fade-up"
             class="justify-center text-center my-12 flex flex-col 2xl:mt-[-67px] md:mt-[-35px] mt-[-58px]"
@@ -560,7 +566,7 @@
                         class="text-[#030303] popins text-4xl font-bold capitalize text-left"
                       >
                         Branding <br />
-                        Graphic Designing <br />
+                        Graphic <br />
                         UI/UX
                       </h6>
                      
@@ -760,11 +766,11 @@
                 class="basis-full md:basis-1/2 rounded-[80px] border border-1 md:p-[5%] p-[10%] bg-color-card1"
               >
                 <a href="https://www.unfauxgettable.co.uk/" target="_blank">
-                  <p
+                  <!-- <p
                     class="popins text-white text-xl font-normal capitalize leading-10"
                   >
                     [ 01 ]
-                  </p>
+                  </p> -->
                   <div class="justify-center flex">
                     <img src="./assets/img/project1.svg" alt="" class="" />
                   </div>
@@ -777,11 +783,11 @@
                 class="basis-full md:basis-1/2 rounded-[80px] border border-1 md:p-[5%] p-[10%] bg-color-card2"
               >
                 <a href="https://davenportm2m.com/" target="_blank">
-                  <p
+                  <!-- <p
                     class="popins text-white text-xl font-normal capitalize leading-10"
                   >
                     [ 02 ]
-                  </p>
+                  </p> -->
                   <div class="justify-center flex">
                     <img src="./assets/img/project2.svg" alt="" class="" />
                   </div>
@@ -796,11 +802,11 @@
                 class="rounded-[80px] border border-1 md:p-[5%] p-[10%] bg-color-card3"
               >
                 <a href="https://mowellens.com/" target="_blank">
-                  <p
+                  <!-- <p
                     class="popins text-white text-xl font-normal capitalize leading-10"
                   >
                     [ 03 ]
-                  </p>
+                  </p> -->
                   <div class="justify-center flex my-5">
                     <img src="./assets/img/project3.webp" alt="" class="" />
                   </div>

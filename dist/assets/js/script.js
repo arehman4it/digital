@@ -97,7 +97,6 @@ animator.animate();
 //   });
 // });
 // navbar end
-
 document.addEventListener('DOMContentLoaded', function() {
   const bars = document.getElementById('bars');
   const mobileMenu = document.getElementById('mobileMenu');

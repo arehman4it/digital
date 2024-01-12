@@ -36,7 +36,7 @@
 /* Website CSS start */
 body {
     color: black;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 .popins{
   font-family: 'Poppins', sans-serif;
@@ -658,4 +658,7 @@ custom-carousel {
   .swiper{
     padding: 10px !important;
   }
+}
+.hero-line{
+  line-height: 1.5 !important;
 }

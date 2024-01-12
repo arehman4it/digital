@@ -597,6 +597,10 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.-mt-6{
+  margin-top: -1.5rem;
+}
+
 .mb-2{
   margin-bottom: 0.5rem;
 }
@@ -665,14 +669,6 @@ video {
   margin-top: 60px;
 }
 
-.-mt-5{
-  margin-top: -1.25rem;
-}
-
-.-mt-6{
-  margin-top: -1.5rem;
-}
-
 .block{
   display: block;
 }
@@ -701,18 +697,6 @@ video {
   height: 3.5rem;
 }
 
-.h-\[500px\]{
-  height: 500px;
-}
-
-.h-\[650px\]{
-  height: 650px;
-}
-
-.h-\[550px\]{
-  height: 550px;
-}
-
 .h-\[600px\]{
   height: 600px;
 }
@@ -739,14 +723,6 @@ video {
 
 .basis-1\/2{
   flex-basis: 50%;
-}
-
-.basis-1\/4{
-  flex-basis: 25%;
-}
-
-.basis-3\/4{
-  flex-basis: 75%;
 }
 
 .basis-full{
@@ -923,10 +899,6 @@ video {
 
 .p-\[7\%\]{
   padding: 7%;
-}
-
-.p-5{
-  padding: 1.25rem;
 }
 
 .px-1{
@@ -1152,20 +1124,12 @@ video {
   line-height: 2.5rem;
 }
 
-.leading-9{
-  line-height: 2.25rem;
-}
-
 .leading-\[45px\]{
   line-height: 45px;
 }
 
 .leading-normal{
   line-height: 1.5;
-}
-
-.leading-snug{
-  line-height: 1.375;
 }
 
 .leading-tight{
@@ -1278,7 +1242,7 @@ video {
 
 body {
   color: black;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 .popins{
@@ -1875,14 +1839,13 @@ custom-carousel {
   }
 }
 
+.hero-line{
+  line-height: 1.5 !important;
+}
+
 .hover\:bg-\[\#030303\]:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(3 3 3 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-white:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .hover\:text-black:hover{
@@ -1984,6 +1947,10 @@ custom-carousel {
 }
 
 @media (min-width: 768px){
+  .md\:absolute{
+    position: absolute;
+  }
+
   .md\:col-span-12{
     grid-column: span 12 / span 12;
   }
@@ -1994,6 +1961,10 @@ custom-carousel {
 
   .md\:col-span-9{
     grid-column: span 9 / span 9;
+  }
+
+  .md\:-mt-0{
+    margin-top: -0px;
   }
 
   .md\:ml-5{
@@ -2016,10 +1987,6 @@ custom-carousel {
     margin-top: 84px;
   }
 
-  .md\:-mt-0{
-    margin-top: -0px;
-  }
-
   .md\:block{
     display: block;
   }
@@ -2028,16 +1995,16 @@ custom-carousel {
     display: flex;
   }
 
+  .md\:hidden{
+    display: none;
+  }
+
   .md\:h-\[500px\]{
     height: 500px;
   }
 
-  .md\:h-\[550px\]{
-    height: 550px;
-  }
-
-  .md\:h-\[600px\]{
-    height: 600px;
+  .md\:basis-1\/2{
+    flex-basis: 50%;
   }
 
   .md\:basis-1\/4{
@@ -2046,10 +2013,6 @@ custom-carousel {
 
   .md\:basis-3\/4{
     flex-basis: 75%;
-  }
-
-  .md\:basis-1\/2{
-    flex-basis: 50%;
   }
 
   .md\:flex-row{
